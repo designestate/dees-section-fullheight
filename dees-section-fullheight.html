@@ -8,30 +8,44 @@
       }
       .section-wrapper {
         background-image:url(https://images.unsplash.com/photo-1440557653082-e8e186733eeb);
+        background-size: cover;
         width: 100%;
         min-height:50px;
+        height:var(--window-height);
       }
     </style>
     <div class="section-wrapper">
-      <h2>Hello [[prop1]]</h2>
+      Hello there!
     </div>
   </template>
 
   <script>
+    var getWindowHeight = () => {
+      var w = window,
+          d = document,
+          e = d.documentElement,
+          g = d.getElementsByTagName('body')[0],
+          x = w.innerWidth || e.clientWidth || g.clientWidth,
+          y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+      return y.toString() + "px";
+    };
     Polymer({
-
       is: 'dees-section-fullheight',
-
       properties: {
         prop1: {
           type: String,
           value: 'dees-section-fullheight',
         },
-      },
-      updateHeight = () => {
-        var pageHeight = $(window).height();
-        return pageHeight;
-      };
+        height: {
+          type:String,
+          value: function(){
+            var windowHeight = getWindowHeight();
+            this.customStyle["--window-height"] = windowHeight;
+            console.log(windowHeight);
+            return windowHeight;
+          }
+        }
+      }
     });
   </script>
 </dom-module>
