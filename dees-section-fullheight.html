@@ -6,11 +6,15 @@
       :host {
         display: block;
       }
+      .section-wrapper {
+        background-image:url(https://images.unsplash.com/photo-1440557653082-e8e186733eeb);
+        width: 100%;
+        min-height:50px;
+      }
     </style>
     <div class="section-wrapper">
-      
+      <h2>Hello [[prop1]]</h2>
     </div>
-    <h2>Hello [[prop1]]</h2>
   </template>
 
   <script>
@@ -24,7 +28,10 @@
           value: 'dees-section-fullheight',
         },
       },
-
+      updateHeight = () => {
+        var pageHeight = $(window).height();
+        return pageHeight;
+      };
     });
   </script>
 </dom-module>
