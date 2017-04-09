@@ -1,29 +1,28 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>dees-section-fullheight demo</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>dees-section-fullheight demo</title>
+
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../dees-section-fullheight.html">
 
-    <style>
-      body {
-        position: relative;
-        margin: 0px;
-        background: #fff;
-        min-height: 100%;
-        min-width: 100%;
-        color: #333;
-        font-family: "Open Sans", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-      } 
+    <style is="custom-style" include="demo-pages-shared-styles">
     </style>
   </head>
   <body>
-  <dees-section-fullheight></dees-section-fullheight>
-
+    <div class="vertical-section-container centered">
+      <h3>Basic dees-section-fullheight demo</h3>
+      <demo-snippet>
+        <template>
+          <dees-section-fullheight></dees-section-fullheight>
+        </template>
+      </demo-snippet>
+    </div>
   </body>
 </html>

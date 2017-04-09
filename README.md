@@ -1,6 +1,6 @@
 # \<dees-section-fullheight\>
 
-creates a fullheight section that is at least as high as the browser window
+a fullheight section
 
 ## Install the Polymer-CLI
 
