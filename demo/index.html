@@ -7,22 +7,18 @@
     <title>dees-section-fullheight demo</title>
 
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../dees-demo-wrapper/dees-demo-wrapper.html">
     <link rel="import" href="../dees-section-fullheight.html">
-
-    <style is="custom-style" include="demo-pages-shared-styles">
+    <style is="custom-style">
+      body {
+        margin: 0px;
+      }
     </style>
   </head>
   <body>
-    <div class="vertical-section-container centered">
-      <h3>Basic dees-section-fullheight demo</h3>
-      <demo-snippet>
-        <template>
-          <dees-section-fullheight></dees-section-fullheight>
-        </template>
-      </demo-snippet>
-    </div>
+    <dees-demo-wrapper>
+      <dees-section-fullheight slot="demoContent"></dees-section-fullheight>
+    </dees-demo-wrapper>
   </body>
+    
 </html>
