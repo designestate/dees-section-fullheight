@@ -5,15 +5,15 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0-rc.2",
     "dees-style-shared": "*",
-    "dees-helper": "^1.0.1",
-    "dees-style-global": "^1.0.3"
+    "dees-helper": "^1.0.1"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
     "web-component-tester": "v6.0.0-prerelease.5",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0-rc.5",
-    "dees-demo-wrapper": "*"
+    "dees-demo-wrapper": "*",
+    "dees-style-global": "^1.0.5"
   },
   "resolutions": {
     "polymer": "^2.0.0-rc.2"
