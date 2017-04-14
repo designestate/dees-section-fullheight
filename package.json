@@ -1,6 +1,6 @@
 {
   "name": "dees-section-fullheight",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "creates a fullheight section that is at least as high as the browser window",
   "main": "index.js",
   "directories": {
