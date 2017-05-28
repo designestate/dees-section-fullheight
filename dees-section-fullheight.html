@@ -16,12 +16,11 @@ a fullheight section
         background-size: cover;
         background-position: center;
         width: 100%;
-        min-height: 100px;
-        height: var(--host-height);
+        min-height: var(--host-height);
         overflow: auto;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <slot></slot>
   </template>
 
   <script>
@@ -37,7 +36,7 @@ a fullheight section
       }
       ready() {
         super.ready()
-        let elementHeight = window.outerHeight
+        let elementHeight = window.innerHeight
         this.updateStyles({
           "--host-height": elementHeight.toString() + 'px'
         })
